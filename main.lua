@@ -116,7 +116,7 @@ function love.load()
     -- 5. 'options' (Player can choose 2 player or AI - difficulty)
     gameState = 'start'
 
-    -- options to play, presented at start of the game 
+    -- DT - options to play, presented at start of the game 
     -- 1. Two Player 
     -- 2. Play against a Bot
     options = 'none'
@@ -248,8 +248,8 @@ function love.update(dt)
         player1.dy = 0
     end
 
-    -- player 2 behavior dependant on the game option chosen
-    -- 1. Two Player
+    -- DT - player 2 behavior dependant on the game option chosen
+    -- Option 1. Two Player
     if options == '1' then
         if love.keyboard.isDown('up') then
             player2.dy = -PADDLE_SPEED
@@ -258,7 +258,7 @@ function love.update(dt)
         else
             player2.dy = 0
         end
-    -- 2. Play a Bot
+    -- Option 2. Play a Bot
     elseif options == '2' then
         player2.y = ball.y
         player2.dy = PADDLE_SPEED * 0.5

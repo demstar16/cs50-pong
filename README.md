@@ -7,3 +7,6 @@ The code that I have done is documented in the code and the features I added are
 - Give options for 2 player or to vs the AI
 ---
 <img src="demo.png">
+
+### Adapted Files
+- main.lua
